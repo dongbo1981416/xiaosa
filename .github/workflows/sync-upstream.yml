@@ -8,6 +8,8 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 关键：授予写入权限
     steps:
       - name: 检出我的仓库
         uses: actions/checkout@v4
@@ -42,6 +44,5 @@ jobs:
             echo "没有变化"
           else
             git commit -m "🔄 同步上游 xiaosa $(date '+%Y-%m-%d %H:%M')"
-            # 关键修改：推送到 main 分支
             git push origin main
           fi
