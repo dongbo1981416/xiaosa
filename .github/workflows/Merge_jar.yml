@@ -23,13 +23,13 @@ jobs:
         distribution: 'temurin'
         java-version: '11'
         
-    - name: Download dex2jar
-      run: |
-        cd xiaosa
-        wget https://github.com/pxb1988/dex2jar/releases/download/v2.4/dex-tools-v2.4.zip
-        unzip dex-tools-v2.4.zip
-        chmod +x dex-tools-v2.4/*.sh
-        ls -la dex-tools-v2.4/
+    # dex2jar 已下载到仓库，无需重复下载
+    # - name: Download dex2jar
+    #   run: |
+    #     cd xiaosa
+    #     wget https://github.com/pxb1988/dex2jar/releases/download/v2.4/dex-tools-v2.4.zip
+    #     unzip dex-tools-v2.4.zip
+    #     chmod +x dex-tools-v2.4/*.sh
         
     - name: Merge and replace
       run: |
