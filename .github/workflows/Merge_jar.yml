@@ -1,0 +1,68 @@
+name: Merge JAR Files (Simplified)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  merge-jars:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        repository: caliph21/xiaosa
+        path: xiaosa
+        
+    - name: Set up JDK
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '11'
+        
+    - name: Extract and merge
+      run: |
+        cd xiaosa
+        
+        # 创建临时目录
+        mkdir -p temp
+        
+        # 解压spider.jar
+        cd temp
+        jar xf ../spider.jar
+        
+        # 复制com.github.catvod到BSX.jar
+        # 方法1: 直接使用jar命令更新BSX.jar
+        cd ..
+        # 将spider中的com/github/catvod目录添加到BSX.jar
+        jar uf BSX.jar -C temp com/github/catvod
+        
+        # 或者方法2: 完整解压BSX，复制文件，重新打包
+        # mkdir -p temp/bsx
+        # cd temp/bsx
+        # jar xf ../../BSX.jar
+        # cp -r ../com temp/bsx/  # 这会把整个com目录复制过去
+        # jar cf ../../BSX-new.jar .
+        # mv ../../BSX-new.jar ../../BSX.jar
+        
+        # 清理临时文件
+        rm -rf temp
+        
+    - name: Replace spider.jar
+      run: |
+        cd xiaosa
+        # 重命名BSX.jar为spider.jar
+        mv BSX.jar spider.jar
+        
+    - name: Commit changes
+      run: |
+        cd xiaosa
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add spider.jar
+        git commit -m "Merge com.github.catvod from BSX.jar to spider.jar" || echo "No changes"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
