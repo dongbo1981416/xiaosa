@@ -1,0 +1,103 @@
+name: Merge JAR Files
+
+on:
+  workflow_run:
+    workflows: ["从上游同步 xiaosa"]
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+  merge-jars:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          repository: caliph21/xiaosa
+          path: xiaosa
+          fetch-depth: 0
+          
+      - name: Check if sync had changes
+        id: check_sync
+        run: |
+          cd xiaosa
+          # 检查最近的提交是否包含 "同步上游" 关键字
+          LAST_COMMIT=$(git log -1 --pretty=%B)
+          echo "Last commit: $LAST_COMMIT"
+          
+          if echo "$LAST_COMMIT" | grep -q "同步上游"; then
+            echo "✅ 检测到同步提交，执行 merge"
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "📭 没有同步提交，跳过 merge"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        if: steps.check_sync.outputs.has_changes == 'true'
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+          
+      - name: Merge and replace
+        if: steps.check_sync.outputs.has_changes == 'true'
+        run: |
+          cd xiaosa
+          
+          SPIDER_JAR=$(find . -name "spider.jar" -type f | head -1)
+          BXS_JAR=$(find . -name "BXS.jar" -type f | head -1)
+          
+          echo "Found spider.jar: $SPIDER_JAR"
+          echo "Found BXS.jar: $BXS_JAR"
+          
+          mkdir -p temp
+          cd temp
+          
+          jar xf "../$SPIDER_JAR"
+          
+          if [ -f "classes.dex" ]; then
+            ../dex-tools-v2.4/d2j-dex2jar.sh classes.dex -o spider-converted.jar
+            jar xf spider-converted.jar
+            
+            if [ -d "com/github/catvod" ]; then
+              jar uf "../$BXS_JAR" com/github/catvod
+            else
+              exit 1
+            fi
+          else
+            exit 1
+          fi
+          
+          cd ..
+          rm -rf temp
+          
+          # 检查是否有实际变化
+          if cmp -s "$BXS_JAR" "$SPIDER_JAR"; then
+            echo "📭 文件没有变化，跳过替换"
+            exit 0
+          fi
+          
+          rm -f "$SPIDER_JAR"
+          cp "$BXS_JAR" "$SPIDER_JAR"
+          
+      - name: Commit and push
+        if: steps.check_sync.outputs.has_changes == 'true'
+        run: |
+          cd xiaosa
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 检查是否有实际变化
+          git add xiaosa/spider.jar BXS.jar
+          if git diff --cached --quiet; then
+            echo "📭 没有实际变化，跳过提交"
+          else
+            git commit -m "Update spider.jar"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
