@@ -146,7 +146,12 @@
     {"key": "push_agent","name": "手机 • 推送","type": 3,"api": "csp_Push","searchable": 0,"filterable": 0,"changeable": 0}
   ],
    "lives": [
-    {}
+    { 
+            "name": "🐬海豚佬xxx视频资源🔞",
+            "type": 0,
+            "ua": "okhttp",
+            "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/GHK/refs/heads/main/xxx视频资源"
+        },
   ],
   "parses": [
     {"name": "聚合","type": 3,"url": "Web"},
