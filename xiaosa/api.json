@@ -126,6 +126,8 @@
         {"key": "精品X资源", "name": "🐬精品X资源｜🔞", "type": 1, "api": "https://www.jingpinx.com/api.php/provide/vod", "searchable": 1, "quickSearch": 1, "filterable": 0},
         {"key": "CK资源", "name": "🐬CK资源｜🔞", "type": 1, "api": "https://ckzy.me/api.php/provide/vod", "searchable": 1, "quickSearch": 1, "filterable": 0},
         {"key": "🔞七天资源🌈", "name": "🐬七天资源🌈｜🔞", "type": 1, "api": "https://8day.icu/api.php/provide/vod/at/json", "searchable": 1, "quickSearch": 1, "filterable": 0},
+    {"key": "黄色仓库|AV", "name": "黄色仓库|AV", "type": 1, "api": "https://hsckzy.vip/api.php/provide/vod/", "searchable": 1, "quickSearch": 1, "filterable": 1},
+{"key": "番号资源", "name": "番号资源｜🔞", "type": 1, "api": "http://fhapi9.com/api.php/provide/vod/", "searchable": 1, "quickSearch": 1, "filterable": 1},
     {"key": "网络直播","name": "网络 • 直播","type": 3,"api": "./py/WLZB.py"},
     {"key": "哔哩直播","name": "哔哩 • 直播","type": 3,"api": "./py/BLZB.py"},
     {"key": "哔哩合集","name": "哔哩 • 合集","type": 3,"api": "csp_Bili","searchable": 1,"quickSearch": 0,"filterable": 0,"changeable": 0,"style": {"type": "rect","ratio": 1.433},"ext": {"json": "./json/BLHJ.json","cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"}},
