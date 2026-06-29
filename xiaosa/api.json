@@ -145,13 +145,8 @@
     {"key": "养生堂","name": "养生 • 知识","type": 3,"api": "csp_YST","searchable": 0,"quickSearch": 0,"changeable": 0,"style": {"type": "rect","ratio": 1.597}},
     {"key": "push_agent","name": "手机 • 推送","type": 3,"api": "csp_Push","searchable": 0,"filterable": 0,"changeable": 0}
   ],
-   "lives": [
-    { 
-            "name": "🐬海豚佬xxx视频资源🔞",
-            "type": 0,
-            "ua": "okhttp",
-            "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/GHK/refs/heads/main/xxx视频资源"
-        },
+    "lives": [
+    {}
   ],
   "parses": [
     {"name": "聚合","type": 3,"url": "Web"},
