@@ -147,7 +147,7 @@
     {"key": "push_agent","name": "手机 • 推送","type": 3,"api": "csp_Push","searchable": 0,"filterable": 0,"changeable": 0}
   ],
   "lives": [
-    {"name": "🐬国际TV 有🔞","type":0,"ua": "okhttp", "url": "https://raw.githubusercontent.com/yihad168/tv/refs/heads/main/tv.m3u"}
+    {}
   ],
   "parses": [
     {"name": "聚合","type": 3,"url": "Web"},
