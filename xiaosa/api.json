@@ -107,6 +107,7 @@
       {"key": "51吃瓜","name": "51吃瓜","type": 3,"api": "./py/51吃瓜.py"},
      {"key": "新涩☆库","name": "新涩☆库","type": 3,"api": "./py/新涩☆库.py"},
      {"key": "高清仓库","name": "高清仓库","type": 3,"api": "./py/高清仓库.py"},
+    {"key": "小红薯","name": "小红薯","type": 3,"api": "./py/小红薯APP.py"},
     {"key": "slyzy", "name": "🐬湿乐园｜🔞", "type": 1, "api": "https://xxavs.com/api.php/provide/vod", "searchable": 1, "quickSearch": 1, "filterable": 1},
         {"key": "nxxzy", "name": "🐬奶香香｜🔞", "type": 1, "api": "https://naixxzy.com/api.php/provide/vod", "searchable": 1, "quickSearch": 1, "filterable": 1},
         {"key": "xbzy", "name": "🐬杏吧｜🔞", "type": 1, "api": "https://xingba111.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1},
