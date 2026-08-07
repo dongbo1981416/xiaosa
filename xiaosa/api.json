@@ -114,7 +114,7 @@
     {"key": "哔哩直播","name": "哔哩 • 直播","type": 3,"api": "./py/BLZB.py"},
       {"key": "007吃瓜","name": "007吃瓜","type": 3,"api": "./py/007吃瓜.py"},
       {"key": "51吃瓜","name": "51吃瓜","type": 3,"api": "./py/51吃瓜.py"},
-     {"key": "新涩☆库","name": "新涩☆库","type": 3,"api": "./py/新涩☆库.py"},
+     {"key": "萝莉岛a","name": "萝莉岛","type": 3,"api": "./py/萝莉岛app.py"},
      {"key": "高清仓库","name": "高清仓库","type": 3,"api": "./py/高清仓库.py"},
     {"key": "小红薯","name": "小红薯","type": 3,"api": "./py/小红薯APP.py"},
     {"key": "Jable","name": "Jable","type": 3,"api": "./py/Jable.py"},
