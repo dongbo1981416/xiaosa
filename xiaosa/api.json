@@ -118,8 +118,7 @@
      {"key": "黄豆短剧","name": "黄豆短剧","type": 3,"api": "./py/黄豆短剧.py"},
     {"key": "小红薯","name": "小红薯","type": 3,"api": "./py/小红薯APP.py"},
     {"key": "Jable","name": "Jable","type": 3,"api": "./py/Jable.py"},
-       {"key": "🙈汤头条[🔞密].py","name": "🙈汤头条[🔞密].py","type": 3,"api": "./py/🙈汤头条[🔞密].py"},
-     {"key": "笔盒[🔞密].py","name": "笔盒[🔞密].py","type": 3,"api": "./py/笔盒[🔞密].py"},
+      
     {"key": "slyzy", "name": "🐬湿乐园｜🔞", "type": 1, "api": "https://xxavs.com/api.php/provide/vod", "searchable": 1, "quickSearch": 1, "filterable": 1},
         {"key": "nxxzy", "name": "🐬奶香香｜🔞", "type": 1, "api": "https://naixxzy.com/api.php/provide/vod", "searchable": 1, "quickSearch": 1, "filterable": 1},
         {"key": "xbzy", "name": "🐬杏吧｜🔞", "type": 1, "api": "https://xingba111.com/api.php/provide/vod/?ac=list", "searchable": 1, "quickSearch": 1, "filterable": 1},
