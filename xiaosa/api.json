@@ -152,8 +152,7 @@
     {"key": "push_agent","name": "手机 • 推送","type": 3,"api": "csp_Push","searchable": 0,"filterable": 0,"changeable": 0}
   ],
   "lives": [
-     {
-      "name": "🐬综合直播 海豚影视交流群 TG：@hshsjk9",
+   "name": "🐬综合直播 海豚影视交流群 TG：@hshsjk9",
       "type": 0,
       "playerType": 2,
       "ua": "okhttp",
@@ -251,6 +250,36 @@
       "url": "https://raw.githubusercontent.com/xJEYDAin/iptv/main/output/all_merged.m3u"
     },
     {
+      "name": "🐬裤佬TV",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://gh-proxy.org/https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg1.m3u"
+    },
+    {
+      "name": "🐬裤佬TV2",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://tv.tmxk.kdns.fr/ex64181y"
+    },
+    {
+      "name": "🐬live.m3u",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://live.445569.xyz/live.m3u"
+    },
+    {
+      "name": "🐬Gather",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://iptv.yang-1989.eu.org/m3u/Gather.m3u"
+    },
+    {
+      "name": "🐬Mytv",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://cdn.qd.je/live.m3u"
+    },
+    {
       "name": "🐬新加坡(梯子)",
       "type": 0,
       "ua": "okhttp",
@@ -340,7 +369,24 @@
       "ua": "okhttp",
       "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/至尊.m3u"
     },
-   
+    {
+      "name": "🐬欧美大片直播🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "http://xtvantsc.xyz/欧美2160.m3u"
+    },
+    {
+      "name": "🐬欧美主播直播🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://chaturbate.xvideos4.tk/api5.php?m3u&all"
+    },
+    {
+      "name": "🐬亚洲主播直播🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://chaturbate.xvideos4.tk/api6.php?m3u"
+    },
     {
       "name": "🐬EVILANGEL🔞",
       "type": 0,
