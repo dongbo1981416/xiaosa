@@ -152,7 +152,138 @@
     {"key": "push_agent","name": "手机 • 推送","type": 3,"api": "csp_Push","searchable": 0,"filterable": 0,"changeable": 0}
   ],
   "lives": [
-       {}
+     {
+      "name": "🐬综合直播 海豚影视交流群 TG：@hshsjk9",
+      "type": 0,
+      "playerType": 2,
+      "ua": "okhttp",
+      "url": "https://raw.githubusercontent.com/fleung49/star/refs/heads/main/mit"
+    },
+    {
+      "name": "🐬易发源 有🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://gh-proxy.org/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt"
+    },
+    {
+      "name": "🐬安博(梯子)卡顿 有🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/安博.txt"
+    },
+    {
+      "name": "🐬海豚佬🔞午夜剧场(挂梯)",
+      "type": 0,
+      "playerType": 2,
+      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/午夜剧场.txt",
+      "header": {
+        "X-Api-key": "8692bd33270440d4d2941b814b81a25a1eb84a7205532971714c4299c57449e0..0..1738210005..5cf2c4ad-043b-4234-83a2-e84ae917"
+      }
+    },
+    {
+      "name": "🐬海豚佬xxx视频资源🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/xxx视频资源.txt"
+    },
+    {
+      "name": "🐬至尊🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/至尊.m3u"
+    },
+    {
+      "name": "🐬欧美大片直播🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "http://xtvantsc.xyz/欧美2160.m3u"
+    },
+    {
+      "name": "🐬欧美主播直播🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://chaturbate.xvideos4.tk/api5.php?m3u&all"
+    },
+    {
+      "name": "🐬亚洲主播直播🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://chaturbate.xvideos4.tk/api6.php?m3u"
+    },
+    {
+      "name": "🐬EVILANGEL🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/HKL/refs/heads/main/EVILANGEL.m3u"
+    },
+    {
+      "name": "🐬FC2-PPV1🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/fgrjk/refs/heads/main/FC2-PPV1.m3u"
+    },
+    {
+      "name": "🐬日本女优1🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/fgrjk/refs/heads/main/日本女优1.m3u"
+    },
+    {
+      "name": "🐬日本女优2🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/fgrjk/refs/heads/main/日本女优2.m3u"
+    },
+    {
+      "name": "🐬日本女优3🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/fgrjk/refs/heads/main/日本女优3.m3u"
+    },
+    {
+      "name": "🐬日本女优4🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/fgrjk/refs/heads/main/日本女优4.m3u"
+    },
+    {
+      "name": "🐬日本女优5🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/fgrjk/refs/heads/main/日本女优5.m3u"
+    },
+    {
+      "name": "🐬日本女优6🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/fgrjk/refs/heads/main/日本女优6.m3u"
+    },
+    {
+      "name": "🐬日本女优7🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/fgrjk/refs/heads/main/日本女优7.m3u"
+    },
+    {
+      "name": "🐬日本女优8🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/fgrjk/refs/heads/main/日本女优8.m3u"
+    },
+    {
+      "name": "🐬日本女优9🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/fgrjk/refs/heads/main/日本女优9.m3u"
+    },
+    {
+      "name": "🐬日本女优10🔞",
+      "type": 0,
+      "ua": "okhttp",
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/fgrjk/refs/heads/main/日本女优10.m3u"
+    }
   ],
   "parses": [
     {"name": "聚合","type": 3,"url": "Web"},
